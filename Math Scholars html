@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Math Scholars</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="game-container">
+        <h1>Math Scholars</h1>
+
+        <p id="question">5 + 3 = ?</p>
+
+        <input type="number" id="answer" placeholder="Enter answer">
+
+        <button onclick="checkAnswer()">Submit</button>
+
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
