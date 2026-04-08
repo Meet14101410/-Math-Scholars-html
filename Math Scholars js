@@ -1,0 +1,29 @@
+// Generate random numbers
+let num1 = Math.floor(Math.random() * 10);
+let num2 = Math.floor(Math.random() * 10);
+
+// Show question
+document.getElementById("question").innerText =
+    num1 + " + " + num2 + " = ?";
+
+// Check answer
+function checkAnswer() {
+    let correctAnswer = num1 + num2;
+    let userAnswer = document.getElementById("answer").value;
+
+    if (userAnswer == correctAnswer) {
+        document.getElementById("result").innerText = "Correct!";
+    } else {
+        document.getElementById("result").innerText =
+            "Wrong! Answer is " + correctAnswer;
+    }
+
+    // New question
+    num1 = Math.floor(Math.random() * 10);
+    num2 = Math.floor(Math.random() * 10);
+
+    document.getElementById("question").innerText =
+        num1 + " + " + num2 + " = ?";
+
+    document.getElementById("answer").value = "";
+}
